@@ -3,5 +3,9 @@
   "dependencies": {
     "crc-32": "^1.2.2",
     "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "@hexlet/immutable-fs-trees": "^0.7.1",
+    "power-assert": "^1.6.1"
   }
 }
