@@ -1,6 +1,3 @@
-// @ts-check
-/* eslint-disable react/prefer-stateless-function */
-
 import React from 'react';
 
 // BEGIN (write your solution here)
