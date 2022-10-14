@@ -8,7 +8,7 @@ export default class MarkdownEditor extends React.Component {
   constructor(props) {
     super(props);
     this.editorRef = React.createRef();
-    this.state = { element: null, editor: null };
+    // this.state = { element: null, editor: null };
   }
 
   componentDidMount() {
@@ -20,7 +20,7 @@ export default class MarkdownEditor extends React.Component {
     editor.addHook('change', () => {
       const content = editor.getMarkdown();
       const { onContentChange } = this.props;
-        onContentChange(content);
+      onContentChange(content);
       // код который будет вызван при изменении содержимого редактора
     });
   }
