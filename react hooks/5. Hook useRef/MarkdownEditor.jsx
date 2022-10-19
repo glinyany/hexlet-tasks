@@ -28,3 +28,22 @@ const MarkdownEditor = ({ onContentChange }) => {
 };
 
 export default MarkdownEditor;
+
+ /* BEGIN
+ const editorRef = useRef(null);
+ const rootElement = useRef(null);
+
+ const onChange = (editor) => onContentChange(editor.getMarkdown());
+
+ useEffect(() => {
+   const editor = new Editor({
+     el: rootElement.current,
+     hideModeSwitch: true,
+   });
+   editor.addHook('change', () => onChange(editor));
+
+   editorRef.current = editor;
+ }, [onContentChange]);
+
+ return <div ref={rootElement} />;
+END */
